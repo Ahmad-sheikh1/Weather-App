@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS link -->
+
+    <!-- axios library link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+        integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awesome icon cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="search-bar">
+            <input type="text" id="placebox" placeholder="Enter City name :">
+            <button class="search-icon" id="run" onclick="getweather()"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <main>
+            <img src="images/cloud.png" class="cloud"><br>
+            <h1 id="temp">23c</h1>
+            <h2 id="city-name" style="text-transform: uppercase;">korangi</h2>
+        </main>
+        <div class="properties">
+            <div class="humidity">
+                <img src="images/moisture-logo-humidifier-removebg-preview.png" class="Himg">
+                <div class="Htitle">
+                    <h3 id="humidityH">23</h3>
+                    <h5 style="text-transform: capitalize;" class="namep">humidity</h5>
+                </div>
+            </div>
+            <div class="wind">
+                <img src="images/wind.png" class="Wimg">
+                <div class="Wtitle">
+                    <h3 id="windH">163</h3>
+                    <h5 style="text-transform: capitalize;" class="namep">wind speed</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
